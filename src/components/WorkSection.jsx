@@ -14,27 +14,18 @@ export default function WorkSection() {
       id="work-section"
     >
       <div className="mx-auto max-w-7xl px-gutter">
-        <div className="mb-space-xl flex flex-col justify-between gap-space-md md:flex-row md:items-end">
-          <div>
-            <div className="mb-space-xs inline-flex items-center gap-2 rounded-full border-2 border-border-dark bg-primary-fixed px-space-sm py-1 font-body text-label-sm font-bold text-on-primary-fixed pop-sm">
-              <Icon name="military_tech" className="text-[16px]" />
-              <span>PROVEN IMPACT // 精选项目案例</span>
-            </div>
-            <h2 className="font-headline text-headline-lg text-border-dark">
-              全球化增长实操与战果
-            </h2>
-            <p className="mt-1 max-w-xl font-body text-body-md text-on-surface-variant">
-              与科技硬件、跨境消费电子及 SaaS
-              头部品牌并肩作战，以数据量化结果，以口碑树立标杆。
-            </p>
+        <div className="mb-space-xl">
+          <div className="mb-space-xs inline-flex items-center gap-2 rounded-full border-2 border-border-dark bg-primary-fixed px-space-sm py-1 font-body text-label-sm font-bold text-on-primary-fixed pop-sm">
+            <Icon name="military_tech" className="text-[16px]" />
+            <span>PROVEN IMPACT // 精选项目案例</span>
           </div>
-          <a
-            className="inline-flex items-center gap-space-xs rounded-xl border-2 border-border-dark bg-surface-card px-space-md py-2.5 font-body text-label-lg font-bold text-border-dark pop-md transition-all hover:bg-surface-soft"
-            href="#work-section"
-          >
-            <span>查看全部案例 / View All Archive (18+)</span>
-            <Icon name="north_east" className="text-[18px]" />
-          </a>
+          <h2 className="font-headline text-headline-lg text-border-dark">
+            全球化增长实操与战果
+          </h2>
+          <p className="mt-1 max-w-xl font-body text-body-md text-on-surface-variant">
+            与科技硬件、跨境消费电子及 SaaS
+            头部品牌并肩作战，以数据量化结果，以口碑树立标杆。
+          </p>
         </div>
 
         <div className="mb-gutter grid grid-cols-1 gap-gutter gap-space-xl lg:grid-cols-12">
@@ -78,27 +69,18 @@ export default function WorkSection() {
               </div>
             </div>
 
-            <div className="mt-space-lg flex flex-wrap items-center justify-between gap-space-sm border-t-2 border-border-dark/20 pt-space-lg">
-              <div className="flex flex-wrap items-center gap-space-xs">
-                <span className="font-body text-label-sm font-bold text-on-surface-variant">
-                  CORE DELIVERABLES:
+            <div className="mt-space-lg flex flex-wrap items-center gap-space-xs border-t-2 border-border-dark/20 pt-space-lg">
+              <span className="font-body text-label-sm font-bold text-on-surface-variant">
+                CORE DELIVERABLES:
+              </span>
+              {['GTM Positioning', 'Creator Seeding', 'Lookbook Content'].map((item) => (
+                <span
+                  key={item}
+                  className="rounded border border-border-dark bg-surface-container px-2 py-0.5 font-body text-label-sm text-border-dark"
+                >
+                  {item}
                 </span>
-                {['GTM Positioning', 'Creator Seeding', 'Lookbook Content'].map((item) => (
-                  <span
-                    key={item}
-                    className="rounded border border-border-dark bg-surface-container px-2 py-0.5 font-body text-label-sm text-border-dark"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
-              <a
-                className="flex items-center gap-1 font-body text-label-lg font-bold text-primary hover:underline"
-                href="#work-section"
-              >
-                <span>查看案例详情 / Case Deep-dive</span>
-                <Icon name="arrow_forward" className="text-[18px]" />
-              </a>
+              ))}
             </div>
           </div>
 
@@ -129,47 +111,31 @@ export default function WorkSection() {
                 </div>
               </div>
             </div>
-            <div className="mt-space-md flex items-center justify-between border-t-2 border-border-dark/20 pt-space-md">
+            <div className="mt-space-md border-t-2 border-border-dark/20 pt-space-md">
               <span className="font-body text-label-sm text-on-surface-variant">
                 2023 - 2024 Q1 项目
               </span>
-              <a
-                className="flex items-center gap-1 font-body text-label-sm font-bold text-border-dark hover:underline"
-                href="#work-section"
-              >
-                <span>View Case</span>
-                <Icon name="arrow_forward" className="text-[16px]" />
-              </a>
             </div>
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-between gap-space-md rounded-2xl border-2 border-border-dark bg-surface-card p-space-lg pop-lg md:flex-row">
-          <div className="flex items-center gap-space-md">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border-2 border-border-dark bg-secondary-fixed pop-sm">
-              <Icon name="storefront" className="text-[26px] text-secondary" />
-            </div>
-            <div>
-              <div className="flex items-center gap-2">
-                <h4 className="font-headline text-headline-sm text-border-dark">
-                  新中式可持续生活方式品牌：巴黎 &amp; 纽约快闪与海外原生社媒裂变
-                </h4>
-                <span className="hidden rounded border border-border-dark bg-surface-soft px-2 py-0.5 font-body text-label-sm font-bold text-border-dark sm:inline">
-                  +240% Growth
-                </span>
-              </div>
-              <p className="mt-0.5 font-body text-body-sm text-on-surface-variant">
-                跨越东西方审美鸿沟的策展式内容策略，全案海外 Instagram 粉丝从 3K 增长至 120K。
-              </p>
-            </div>
+        <div className="flex flex-col gap-space-md rounded-2xl border-2 border-border-dark bg-surface-card p-space-lg pop-lg md:flex-row md:items-center">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border-2 border-border-dark bg-secondary-fixed pop-sm">
+            <Icon name="storefront" className="text-[26px] text-secondary" />
           </div>
-          <a
-            className="inline-flex shrink-0 items-center rounded-xl border-2 border-border-dark bg-surface-soft px-space-md py-2 font-body text-label-sm font-bold text-border-dark pop-sm transition-all hover:bg-surface-card"
-            href="#work-section"
-          >
-            <span>阅读简报 / Briefing</span>
-            <Icon name="chevron_right" className="ml-1 text-[16px]" />
-          </a>
+          <div>
+            <div className="flex flex-wrap items-center gap-2">
+              <h4 className="font-headline text-headline-sm text-border-dark">
+                新中式可持续生活方式品牌：巴黎 &amp; 纽约快闪与海外原生社媒裂变
+              </h4>
+              <span className="rounded border border-border-dark bg-surface-soft px-2 py-0.5 font-body text-label-sm font-bold text-border-dark">
+                +240% Growth
+              </span>
+            </div>
+            <p className="mt-0.5 font-body text-body-sm text-on-surface-variant">
+              跨越东西方审美鸿沟的策展式内容策略，全案海外 Instagram 粉丝从 3K 增长至 120K。
+            </p>
+          </div>
         </div>
       </div>
     </section>

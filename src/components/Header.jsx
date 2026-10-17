@@ -9,19 +9,14 @@ export default function Header() {
           <div className="rounded-lg border-2 border-border-dark bg-primary px-space-sm py-1 font-headline text-headline-sm text-on-primary pop-sm transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
             N
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-wrap items-center gap-2">
             <span className="font-headline text-headline-sm leading-none tracking-tight text-border-dark">
-              Niki
+              Niki Tan
             </span>
-            <div className="mt-0.5 flex flex-wrap items-center gap-2">
-              <span className="font-body text-label-sm font-bold tracking-wider text-on-surface-variant">
-                // 海外营销人
-              </span>
-              <span className="hidden items-center gap-1 rounded-full border-2 border-border-dark bg-surface-card px-2 py-0.5 font-body text-label-sm font-bold text-border-dark pop-sm sm:inline-flex">
-                <Icon name="verified" className="text-[14px] text-primary" />
-                5年+出海实战经验
-              </span>
-            </div>
+            <span className="hidden items-center gap-1 rounded-full border-2 border-border-dark bg-surface-card px-2 py-0.5 font-body text-label-sm font-bold text-border-dark pop-sm sm:inline-flex">
+              <Icon name="verified" className="text-[14px] text-primary" />
+              5年+出海实战经验
+            </span>
           </div>
         </a>
 

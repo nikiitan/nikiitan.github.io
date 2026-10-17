@@ -4,7 +4,6 @@ import Icon from './Icon'
 const TAGS = [
   { label: '# 跨文化叙事', className: 'bg-surface-soft text-border-dark' },
   { label: '# GenAI 营销应用', className: 'bg-secondary-fixed text-border-dark' },
-  { label: '# GTM 体系孵化', className: 'bg-quaternary-mint text-border-dark' },
   {
     label: '# 海外创作者生态',
     className: 'bg-primary-fixed text-on-primary-fixed',
@@ -32,7 +31,7 @@ export default function AboutSection() {
                 </p>
                 <div className="mt-0.5 flex items-center gap-1 text-[13px] text-on-surface-variant">
                   <Icon name="location_on" className="text-[14px]" />
-                  <span>North America &amp; Europe Focus / Remote Worldwide</span>
+                  <span>Shenzhen based / Remote Worldwide</span>
                 </div>
               </div>
             </div>
@@ -81,9 +80,6 @@ export default function AboutSection() {
             <h2 className="font-headline text-headline-lg text-border-dark">
               三维一体的出海破局增长模型
             </h2>
-            <p className="max-w-xl font-body text-body-md text-on-surface-variant">
-              摒弃单点打法的盲目投放，以结构化的系统框架帮助出海业务扎根。
-            </p>
           </div>
 
           {METHODOLOGY_PILLARS.map((pillar) => (

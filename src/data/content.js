@@ -90,10 +90,4 @@ export const METHODOLOGY_PILLARS = [
   },
 ]
 
-export const SOCIAL_LINKS = [
-  { label: 'LinkedIn', href: 'https://linkedin.com' },
-  { label: 'Twitter/X', href: 'https://x.com' },
-  { label: 'WeChat / 微信', href: '#contact' },
-]
-
 export const CONTACT_EMAIL = 'niki.tan.work@outlook.com'
